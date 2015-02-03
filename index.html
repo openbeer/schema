@@ -1,0 +1,42 @@
+---
+layout: default
+title: Tables
+---
+
+<h2>Tables</h2>
+
+{% for table in site.data.schema.tables %}
+  <a href="#{{table.name}}">{{ table.name }}</a>  •
+{% endfor %}
+
+<!-- todo/fix: do not include bullet for first (or last) table -->
+
+
+{% for table in site.data.schema.tables %}
+  
+<a name="{{table.name}}"></a><h3>Table {{ table.name }}</h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th></th>
+    <th>Default</th>
+    <th>Comments</th>
+  </tr>
+  {% for field in table.fields %}
+    <tr>
+      <td>{{ field.name }}</td>
+      <td>{{ field.type }}</td>
+      <td>{% if field.null %}
+            NOT NULL
+          {% endif %}
+      </td>
+      <td>{{ field.default }}</td>
+      <td><!-- comments - to be done --></td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% endfor %}
+

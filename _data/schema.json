@@ -1,0 +1,21 @@
+{
+    "tables": [
+      {
+        "name": "test",
+        "fields": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "default": null,
+            "null": false
+          },
+          {
+            "name": "brewery_id",
+            "type": "integer",
+            "default": null,
+            "null": false
+          }
+        ]
+      }
+    ]
+}
