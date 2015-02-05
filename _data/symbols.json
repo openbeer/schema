@@ -1,0 +1,868 @@
+[
+  {
+    "name": "A",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "abbr",
+        "tables": [
+          "regions"
+        ]
+      },
+      {
+        "name": "abinbev",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "abv",
+        "tables": [
+          "beers"
+        ]
+      },
+      {
+        "name": "address",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "alpha2",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "alpha3",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "alt_names",
+        "tables": [
+          "cities",
+          "continents",
+          "countries",
+          "regions"
+        ]
+      },
+      {
+        "name": "app",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "area",
+        "tables": [
+          "cities",
+          "countries",
+          "regions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "B",
+    "tables": [
+      "beers",
+      "brands",
+      "breweries"
+    ],
+    "columns": [
+      {
+        "name": "brand_id",
+        "tables": [
+          "beers"
+        ]
+      },
+      {
+        "name": "brewery_id",
+        "tables": [
+          "beers",
+          "brands"
+        ]
+      },
+      {
+        "name": "brewpub",
+        "tables": [
+          "breweries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "C",
+    "tables": [
+      "cities",
+      "continents",
+      "countries",
+      "country_codes"
+    ],
+    "columns": [
+      {
+        "name": "c",
+        "tables": [
+          "cities",
+          "countries"
+        ]
+      },
+      {
+        "name": "carlsberg",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "city_id",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "cities"
+        ]
+      },
+      {
+        "name": "closed",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "code",
+        "tables": [
+          "cities",
+          "countries",
+          "regions"
+        ]
+      },
+      {
+        "name": "continent_id",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "country_id",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "cities",
+          "countries",
+          "country_codes",
+          "regions",
+          "usages"
+        ]
+      },
+      {
+        "name": "created_at",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "cities",
+          "continents",
+          "countries",
+          "langs",
+          "logs",
+          "names",
+          "places",
+          "props",
+          "regions",
+          "taggings",
+          "tags",
+          "usages"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "D",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "d",
+        "tables": [
+          "cities",
+          "countries"
+        ]
+      },
+      {
+        "name": "diageo",
+        "tables": [
+          "breweries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "E",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "F",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "fifa",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "fips",
+        "tables": [
+          "countries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "G",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "global",
+        "tables": [
+          "brands"
+        ]
+      },
+      {
+        "name": "grade",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "tags"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "H",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "heineken",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "hist_names",
+        "tables": [
+          "countries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "I",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "ibu",
+        "tables": [
+          "beers"
+        ]
+      },
+      {
+        "name": "id",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "cities",
+          "continents",
+          "countries",
+          "country_codes",
+          "langs",
+          "logs",
+          "names",
+          "places",
+          "props",
+          "regions",
+          "taggings",
+          "tags",
+          "usages"
+        ]
+      },
+      {
+        "name": "indie",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "internl",
+        "tables": [
+          "brands"
+        ]
+      },
+      {
+        "name": "ioc",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "iso",
+        "tables": [
+          "regions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "J",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "K",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "kcal",
+        "tables": [
+          "beers"
+        ]
+      },
+      {
+        "name": "key",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "cities",
+          "continents",
+          "countries",
+          "langs",
+          "props",
+          "regions",
+          "tags"
+        ]
+      },
+      {
+        "name": "kind",
+        "tables": [
+          "country_codes",
+          "places",
+          "props"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "L",
+    "tables": [
+      "langs",
+      "logs"
+    ],
+    "columns": [
+      {
+        "name": "lang",
+        "tables": [
+          "names"
+        ]
+      },
+      {
+        "name": "lang_id",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "lat",
+        "tables": [
+          "places"
+        ]
+      },
+      {
+        "name": "level",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "limited",
+        "tables": [
+          "beers"
+        ]
+      },
+      {
+        "name": "lng",
+        "tables": [
+          "places"
+        ]
+      },
+      {
+        "name": "local",
+        "tables": [
+          "brands"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "m",
+        "tables": [
+          "cities",
+          "countries"
+        ]
+      },
+      {
+        "name": "minor",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "molsoncoors",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "motor",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "msg",
+        "tables": [
+          "logs"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "N",
+    "tables": [
+      "names"
+    ],
+    "columns": [
+      {
+        "name": "name",
+        "tables": [
+          "cities",
+          "continents",
+          "countries",
+          "country_codes",
+          "langs",
+          "names",
+          "places",
+          "regions",
+          "tags"
+        ]
+      },
+      {
+        "name": "national",
+        "tables": [
+          "brands"
+        ]
+      },
+      {
+        "name": "net",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "num",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "nuts",
+        "tables": [
+          "regions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "O",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "official",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "og",
+        "tables": [
+          "beers"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "P",
+    "tables": [
+      "places",
+      "props"
+    ],
+    "columns": [
+      {
+        "name": "parent_id",
+        "tables": [
+          "tags"
+        ]
+      },
+      {
+        "name": "percent",
+        "tables": [
+          "usages"
+        ]
+      },
+      {
+        "name": "pid",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "place_id",
+        "tables": [
+          "cities",
+          "continents",
+          "countries",
+          "names",
+          "regions"
+        ]
+      },
+      {
+        "name": "pop",
+        "tables": [
+          "cities",
+          "countries",
+          "regions"
+        ]
+      },
+      {
+        "name": "popm",
+        "tables": [
+          "cities"
+        ]
+      },
+      {
+        "name": "prod",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "prod_grade",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "prod_l",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "prod_m",
+        "tables": [
+          "breweries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Q",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "R",
+    "tables": [
+      "regions"
+    ],
+    "columns": [
+      {
+        "name": "region_id",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "cities"
+        ]
+      },
+      {
+        "name": "regional",
+        "tables": [
+          "brands"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "S",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "s",
+        "tables": [
+          "countries"
+        ]
+      },
+      {
+        "name": "sabmiller",
+        "tables": [
+          "breweries"
+        ]
+      },
+      {
+        "name": "seasonal",
+        "tables": [
+          "beers"
+        ]
+      },
+      {
+        "name": "since",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries"
+        ]
+      },
+      {
+        "name": "slug",
+        "tables": [
+          "continents",
+          "countries",
+          "tags"
+        ]
+      },
+      {
+        "name": "srm",
+        "tables": [
+          "beers"
+        ]
+      },
+      {
+        "name": "synonyms",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "T",
+    "tables": [
+      "taggings",
+      "tags"
+    ],
+    "columns": [
+      {
+        "name": "tag",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "tag_id",
+        "tables": [
+          "taggings"
+        ]
+      },
+      {
+        "name": "taggable_id",
+        "tables": [
+          "taggings"
+        ]
+      },
+      {
+        "name": "taggable_type",
+        "tables": [
+          "taggings"
+        ]
+      },
+      {
+        "name": "tid",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "title",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries"
+        ]
+      },
+      {
+        "name": "ts",
+        "tables": [
+          "logs"
+        ]
+      },
+      {
+        "name": "txt",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries"
+        ]
+      },
+      {
+        "name": "txt_auto",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "U",
+    "tables": [
+      "usages"
+    ],
+    "columns": [
+      {
+        "name": "updated_at",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries",
+          "cities",
+          "continents",
+          "countries",
+          "langs",
+          "logs",
+          "names",
+          "places",
+          "props",
+          "regions",
+          "taggings",
+          "tags",
+          "usages"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "V",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "value",
+        "tables": [
+          "props"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "W",
+    "tables": [
+
+    ],
+    "columns": [
+      {
+        "name": "web",
+        "tables": [
+          "beers",
+          "brands",
+          "breweries"
+        ]
+      },
+      {
+        "name": "wiki",
+        "tables": [
+          "brands"
+        ]
+      },
+      {
+        "name": "wikipedia",
+        "tables": [
+          "breweries",
+          "countries"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "X",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "Y",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "Z",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  }
+]

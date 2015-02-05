@@ -1,0 +1,1293 @@
+{
+  "schemas": [
+    {
+      "name": "beer",
+      "tables": [
+        {
+          "name": "beers",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "synonyms",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "web",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "since",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "seasonal",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "limited",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "kcal",
+              "type": "decimal",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "abv",
+              "type": "decimal",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "og",
+              "type": "decimal",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "srm",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "ibu",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "brewery_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "brand_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "grade",
+              "type": "integer",
+              "default": "4",
+              "null": false
+            },
+            {
+              "name": "txt",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "txt_auto",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "region_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "brands",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "synonyms",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "web",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "wiki",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "since",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "global",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "internl",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "national",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "regional",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "local",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "grade",
+              "type": "integer",
+              "default": "4",
+              "null": false
+            },
+            {
+              "name": "txt",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "txt_auto",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "brewery_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "region_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "breweries",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "title",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "synonyms",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "address",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "since",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "closed",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "brewpub",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "prod_m",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "prod_l",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "prod",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "prod_grade",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "grade",
+              "type": "integer",
+              "default": "4",
+              "null": false
+            },
+            {
+              "name": "txt",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "txt_auto",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "web",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "wikipedia",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "indie",
+              "type": "boolean",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "abinbev",
+              "type": "boolean",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "sabmiller",
+              "type": "boolean",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "heineken",
+              "type": "boolean",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "carlsberg",
+              "type": "boolean",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "molsoncoors",
+              "type": "boolean",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "diageo",
+              "type": "boolean",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "region_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "world",
+      "tables": [
+        {
+          "name": "cities",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "region_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "city_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pop",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "popm",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "area",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "m",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "c",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "d",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "continents",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "slug",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "countries",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "slug",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "hist_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pop",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "area",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "continent_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "s",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "c",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "d",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "m",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "motor",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alpha2",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alpha3",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "num",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "fifa",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "ioc",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "fips",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "net",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "wikipedia",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "country_codes",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "kind",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            }
+          ]
+        },
+        {
+          "name": "langs",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "names",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "lang",
+              "type": "varchar",
+              "default": "en",
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "places",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "kind",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "lat",
+              "type": "float",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "lng",
+              "type": "float",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "regions",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "place_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "code",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "abbr",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "iso",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "nuts",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "alt_names",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "pop",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "area",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "usages",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "country_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "lang_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "official",
+              "type": "boolean",
+              "default": "t",
+              "null": false
+            },
+            {
+              "name": "minor",
+              "type": "boolean",
+              "default": "f",
+              "null": false
+            },
+            {
+              "name": "percent",
+              "type": "float",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "support",
+      "tables": [
+        {
+          "name": "logs",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "msg",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "level",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "app",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "tag",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "pid",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "tid",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "ts",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "props",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "value",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "kind",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "taggings",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "tag_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "taggable_id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "taggable_type",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        },
+        {
+          "name": "tags",
+          "columns": [
+            {
+              "name": "id",
+              "type": "integer",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "key",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "slug",
+              "type": "varchar",
+              "default": null,
+              "null": false
+            },
+            {
+              "name": "name",
+              "type": "varchar",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "grade",
+              "type": "integer",
+              "default": "1",
+              "null": false
+            },
+            {
+              "name": "parent_id",
+              "type": "integer",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "created_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            },
+            {
+              "name": "updated_at",
+              "type": "datetime",
+              "default": null,
+              "null": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
