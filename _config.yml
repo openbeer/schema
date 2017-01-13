@@ -1,8 +1,4 @@
-###########
-# site.url, site.title
-
 title: 'beer.db Schema Docu'
-url:   'http://openbeer.github.io/schema'
 
 
 ########
@@ -17,6 +13,7 @@ sass:
 
 exclude:
 - README.md
+- LICENSE.md
 
 
 safe: true
